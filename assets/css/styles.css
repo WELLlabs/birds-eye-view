@@ -1,62 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
 header {
     background: #2c3e50;
     padding: 10px 20px;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns all items to the right */
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Aligns the ul items with the button */
+}
+
+nav ul li {
+    margin-right: 20px; /* Adds some spacing between each item */
 }
 
 nav a {
     color: #ecf0f1;
     text-decoration: none;
     font-weight: bold;
-}
-
-.hero {
-    background: #34495e;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.stakeholders {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.panel {
-    background: #ecf0f1;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.cta {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #2980b9;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-footer {
-    background: #2c3e50;
-    color: #ecf0f1;
-    text-align: center;
-    padding: 10px;
+    padding: 10px 0; /* Adjust padding to align with the button */
 }
 
 .dropdown {
@@ -78,7 +46,7 @@ footer {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
